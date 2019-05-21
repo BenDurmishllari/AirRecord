@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Particulates>   
+    <Location name="Liverpool">    
+        <Reading date="03/02/2019">       
+            <value>15</value>       
+            <temperature>9.0</temperature>       
+            <humidity>61.5</humidity>     
+        </Reading>     
+        <Reading date="14/02/2019">       
+            <value>17</value>       
+            <temperature>24.4</temperature>      
+            <humidity>12.0</humidity>     
+        </Reading>   
+   </Location> 
+</Particulates>
