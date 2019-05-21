@@ -39,6 +39,7 @@
             this.reportLbl = new System.Windows.Forms.Label();
             this.candidateListbox = new System.Windows.Forms.ListBox();
             this.partyListbox = new System.Windows.Forms.ListBox();
+            this.btnsort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // configBtn
@@ -110,7 +111,7 @@
             // partiesBtn
             // 
             this.partiesBtn.Enabled = false;
-            this.partiesBtn.Location = new System.Drawing.Point(50, 341);
+            this.partiesBtn.Location = new System.Drawing.Point(50, 441);
             this.partiesBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.partiesBtn.Name = "partiesBtn";
             this.partiesBtn.Size = new System.Drawing.Size(270, 61);
@@ -158,11 +159,24 @@
             this.partyListbox.Size = new System.Drawing.Size(873, 354);
             this.partyListbox.TabIndex = 10;
             // 
+            // btnsort
+            // 
+            this.btnsort.Enabled = false;
+            this.btnsort.Location = new System.Drawing.Point(50, 340);
+            this.btnsort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnsort.Name = "btnsort";
+            this.btnsort.Size = new System.Drawing.Size(270, 61);
+            this.btnsort.TabIndex = 11;
+            this.btnsort.Text = "Alphabetical Sort";
+            this.btnsort.UseVisualStyleBackColor = true;
+            this.btnsort.Click += new System.EventHandler(this.btnsort_Click);
+            // 
             // FormsBasedUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1658, 1117);
+            this.Controls.Add(this.btnsort);
             this.Controls.Add(this.partyListbox);
             this.Controls.Add(this.candidateListbox);
             this.Controls.Add(this.reportLbl);
@@ -196,6 +210,7 @@
         private System.Windows.Forms.Label reportLbl;
         private System.Windows.Forms.ListBox candidateListbox;
         private System.Windows.Forms.ListBox partyListbox;
+        private System.Windows.Forms.Button btnsort;
     }
 }
 

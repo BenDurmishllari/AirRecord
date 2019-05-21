@@ -122,7 +122,7 @@ namespace Election
             foreach (var constituency in constituencyList.Locations)
             {
                 LocationListbox.Items.Add(constituency);
-                LocationListbox.Sorted = true;
+                
             }
         }
 
@@ -170,12 +170,14 @@ namespace Election
             // Update form object properties
             progressLbl.Text = "Candidate data loaded";
             constituencyBtn.Enabled = true;
+            btnsort.Enabled = true;
             partiesBtn.Enabled = true;
             RunProducerConsumerBtn.Enabled = false;
         }
 
         private void constituenciesBtn_Click(object sender, EventArgs e)
         {
+            LocationListbox.Items.Clear();
             DisplayLocations();
         }
 
@@ -198,6 +200,10 @@ namespace Election
             }
         }
 
-        
+        private void btnsort_Click(object sender, EventArgs e)
+        {
+            
+            LocationListbox.Sorted = true;
+        }
     }
 }
