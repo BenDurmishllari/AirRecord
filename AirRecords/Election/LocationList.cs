@@ -34,6 +34,7 @@ namespace Election
                     Total = total
                 };
 
+
             foreach (var p in parTotal)
             {
                 particulatedataList.Add(String.Format("Date: {0} Total Values: {1}", p.Par, p.Total));
