@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Xml.Linq;
 
-namespace Election
+namespace AirRecords
 {
     public class XMLConstituencyFileReader : IConstituencyFileReader
     {

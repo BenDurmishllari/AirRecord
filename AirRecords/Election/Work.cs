@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Election
+namespace AirRecords
 {
 	public class Work
 	{

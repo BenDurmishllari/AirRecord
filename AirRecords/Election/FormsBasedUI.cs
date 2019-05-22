@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Election
+namespace AirRecords
 {
     public partial class FormsBasedUI : Form, IUserInterface
     {
@@ -118,7 +118,7 @@ namespace Election
             // Clear any items in listbox
             LocationListbox.Items.Clear();
 
-            // Having finished generating data we can now display constituency data on form
+            // Having finished generating data we can now display loc data on form
             foreach (var constituency in constituencyList.Locations)
             {
                 LocationListbox.Items.Add(constituency);
@@ -131,7 +131,7 @@ namespace Election
             // Clear any items in listbox
             partyListbox.Items.Clear();
 
-            // Having finished generating data we can now display constituency data on form
+            // Having finished generating data we can now display loc data on form
             foreach (var party in constituencyList.CalculateTotalParticulates())
             {
                 partyListbox.Items.Add(party);
@@ -186,24 +186,25 @@ namespace Election
             DisplayParties();
         }
 
-        private void constituencyListbox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Clear any items in listbox
-            candidateListbox.Items.Clear();
-
-            Location constituency = (Location) LocationListbox.SelectedItem;
-
-            // Having finished generating data we can now display party data on form
-            foreach (var c in constituency.Particulates)
-            {
-                candidateListbox.Items.Add(c);
-            }
-        }
 
         private void btnsort_Click(object sender, EventArgs e)
         {
             
             LocationListbox.Sorted = true;
+        }
+
+        private void LocationListbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Clear any items in listbox
+            candidateListbox.Items.Clear();
+
+            Location loc = (Location)LocationListbox.SelectedItem;
+
+            // Having finished generating data we can now display party data on form
+            foreach (var c in loc.Particulates)
+            {
+                candidateListbox.Items.Add(c);
+            }
         }
     }
 }

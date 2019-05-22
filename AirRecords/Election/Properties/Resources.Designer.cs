@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Election.Properties
+namespace AirRecords.Properties
 {
 
 

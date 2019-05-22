@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Election
+namespace AirRecords
 {
 	// The Consumer class runs on its own thread and continues to run until instructed to finish
 	class Consumer

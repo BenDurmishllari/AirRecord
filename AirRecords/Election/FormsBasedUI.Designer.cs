@@ -1,4 +1,4 @@
-﻿namespace Election
+﻿namespace AirRecords
 {
     partial class FormsBasedUI
     {
@@ -94,7 +94,7 @@
             this.LocationListbox.Name = "LocationListbox";
             this.LocationListbox.Size = new System.Drawing.Size(434, 354);
             this.LocationListbox.TabIndex = 4;
-            this.LocationListbox.SelectedIndexChanged += new System.EventHandler(this.constituencyListbox_SelectedIndexChanged);
+            this.LocationListbox.SelectedIndexChanged += new System.EventHandler(this.LocationListbox_SelectedIndexChanged);
             // 
             // constituencyBtn
             // 
@@ -143,20 +143,20 @@
             // 
             this.candidateListbox.FormattingEnabled = true;
             this.candidateListbox.ItemHeight = 25;
-            this.candidateListbox.Location = new System.Drawing.Point(938, 181);
+            this.candidateListbox.Location = new System.Drawing.Point(977, 181);
             this.candidateListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.candidateListbox.Name = "candidateListbox";
-            this.candidateListbox.Size = new System.Drawing.Size(631, 354);
+            this.candidateListbox.Size = new System.Drawing.Size(592, 354);
             this.candidateListbox.TabIndex = 9;
             // 
             // partyListbox
             // 
             this.partyListbox.FormattingEnabled = true;
             this.partyListbox.ItemHeight = 25;
-            this.partyListbox.Location = new System.Drawing.Point(696, 580);
+            this.partyListbox.Location = new System.Drawing.Point(977, 565);
             this.partyListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.partyListbox.Name = "partyListbox";
-            this.partyListbox.Size = new System.Drawing.Size(873, 354);
+            this.partyListbox.Size = new System.Drawing.Size(592, 354);
             this.partyListbox.TabIndex = 10;
             // 
             // btnsort
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1658, 1117);
+            this.ClientSize = new System.Drawing.Size(1658, 1038);
             this.Controls.Add(this.btnsort);
             this.Controls.Add(this.partyListbox);
             this.Controls.Add(this.candidateListbox);
