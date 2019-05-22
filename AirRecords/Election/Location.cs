@@ -32,7 +32,7 @@ namespace AirRecords
         {
             totalpartcalculate();
             
-            return String.Format("Location: {0} Total Particulates: {1}", this.Name, this.totalparticulate);
+            return String.Format("Location: {0} ", this.Name);
         }
     }
 }

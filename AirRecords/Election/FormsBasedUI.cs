@@ -15,7 +15,7 @@ namespace AirRecords
     {
         public IConstituencyFileReader IOhandler { get; set; }
         private ConfigData configData;
-        private LocationList constituencyList;
+        private LocationList locList;
 
         private String selectedReportType;
 
@@ -25,9 +25,7 @@ namespace AirRecords
             this.IOhandler = IOhandler;
         }
 
-        private void FormsBasedUI_Load(object sender, EventArgs e)
-        {
-        }
+        
 
         public void SetupConfigData()
         {
@@ -44,7 +42,7 @@ namespace AirRecords
         public void RunProducerConsumer()
         {
             //Create cyclist list to hold individual cyclist objects read from datasets
-            constituencyList = new LocationList();
+            locList = new LocationList();
 
             // Create progress manager with number of files to process
             ProgressManager progManager = new ProgressManager(configData.configRecords.Count);
@@ -60,8 +58,8 @@ namespace AirRecords
             Producer[] producers = { new Producer("P1", pcQueue, configData, IOhandler),
                                      new Producer("P2", pcQueue, configData, IOhandler) };
 
-            Consumer[] consumers = { new Consumer("C1", pcQueue, constituencyList, progManager),
-                                     new Consumer("C2", pcQueue, constituencyList, progManager) };
+            Consumer[] consumers = { new Consumer("C1", pcQueue, locList, progManager),
+                                     new Consumer("C2", pcQueue, locList, progManager) };
 
             // Keep producing and consuming until all work items are completed
             while (progManager.ItemsRemaining > 0) ;
@@ -119,27 +117,37 @@ namespace AirRecords
             LocationListbox.Items.Clear();
 
             // Having finished generating data we can now display loc data on form
-            foreach (var constituency in constituencyList.Locations)
+            foreach (var constituency in locList.Locations)
             {
                 LocationListbox.Items.Add(constituency);
                 
             }
         }
 
-        public void DisplayParties()
+        public void DisplayHighByDate()
         {
             // Clear any items in listbox
-            partyListbox.Items.Clear();
+            HighestByDateListbox.Items.Clear();
 
             // Having finished generating data we can now display loc data on form
-            foreach (var party in constituencyList.CalculateTotalParticulates())
+            foreach (var party in locList.CalculateTotalParticulates())
             {
-                partyListbox.Items.Add(party);
+                HighestByDateListbox.Items.Add(party);
 
             }
-
-            
         }
+
+        public void CalculateTotalParticulates2()
+        {
+            DisplayHighByLacationListBox.Items.Clear();
+
+            foreach (var q in locList.CalculateTotalParticulates2())
+            {
+                DisplayHighByLacationListBox.Items.Add(q);
+            }
+        }
+
+
 
         private void configBtn_Click(object sender, EventArgs e)
         {
@@ -151,9 +159,11 @@ namespace AirRecords
             // Update form object properties
             progressLbl.Text = "Config data loaded. Waiting for user to press load";
             RunProducerConsumerBtn.Enabled = true;
-            constituencyBtn.Enabled = false;
-            partiesBtn.Enabled = false;
+            BtnDisplayLocations.Enabled = false;
+            btnhighbydate.Enabled = false;
+            btnHighLocation.Enabled = false;
             configBtn.Enabled = false;
+            
         }
 
         private void RunProducerConsumerBtn_Click(object sender, EventArgs e)
@@ -169,10 +179,12 @@ namespace AirRecords
 
             // Update form object properties
             progressLbl.Text = "Candidate data loaded";
-            constituencyBtn.Enabled = true;
+            BtnDisplayLocations.Enabled = true;
+            btnHighLocation.Enabled = true;
             btnsort.Enabled = true;
-            partiesBtn.Enabled = true;
+            btnhighbydate.Enabled = true;
             RunProducerConsumerBtn.Enabled = false;
+            btnhighValue.Enabled = true;
         }
 
         private void constituenciesBtn_Click(object sender, EventArgs e)
@@ -181,10 +193,7 @@ namespace AirRecords
             DisplayLocations();
         }
 
-        private void partiesBtn_Click(object sender, EventArgs e)
-        {
-            DisplayParties();
-        }
+        
 
 
         private void btnsort_Click(object sender, EventArgs e)
@@ -196,15 +205,30 @@ namespace AirRecords
         private void LocationListbox_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Clear any items in listbox
-            candidateListbox.Items.Clear();
+            DetailListbox.Items.Clear();
 
             Location loc = (Location)LocationListbox.SelectedItem;
 
             // Having finished generating data we can now display party data on form
             foreach (var c in loc.Particulates)
             {
-                candidateListbox.Items.Add(c);
+                DetailListbox.Items.Add(c);
             }
+        }
+
+        private void btnhighbydate_Click(object sender, EventArgs e)
+        {
+            DisplayHighByDate();
+        }
+
+        private void btnHighLocation_Click(object sender, EventArgs e)
+        {
+            CalculateTotalParticulates2();
+        }
+
+        private void btnhighValue_Click(object sender, EventArgs e)
+        {
+            lblhighestValue.Text = locList.highestValue();
         }
     }
 }

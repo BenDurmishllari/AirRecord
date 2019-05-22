@@ -1,7 +1,0 @@
-C:\Users\Ben\Documents\CET 212\Week 11 (PPW2)\AirRecords\.vs\AirRecords\lut\0\b\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\Users\Ben\Documents\CET 212\Week 11 (PPW2)\AirRecords\.vs\AirRecords\lut\0\b\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\Users\Ben\Documents\CET 212\Week 11 (PPW2)\AirRecords\.vs\AirRecords\lut\0\b\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\Ben\Documents\CET 212\Week 11 (PPW2)\AirRecords\.vs\AirRecords\lut\0\b\UnitTestProject2\bin\Debug\UnitTestProject2.dll
-C:\Users\Ben\Documents\CET 212\Week 11 (PPW2)\AirRecords\.vs\AirRecords\lut\0\i\UnitTestProject2\Debug\UnitTestProject2.csproj.CoreCompileInputs.cache
-C:\Users\Ben\Documents\CET 212\Week 11 (PPW2)\AirRecords\.vs\AirRecords\lut\0\i\UnitTestProject2\Debug\UnitTestProject2.csproj.CopyComplete
-C:\Users\Ben\Documents\CET 212\Week 11 (PPW2)\AirRecords\.vs\AirRecords\lut\0\i\UnitTestProject2\Debug\UnitTestProject2.dll

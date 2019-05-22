@@ -33,13 +33,20 @@
             this.progressLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LocationListbox = new System.Windows.Forms.ListBox();
-            this.constituencyBtn = new System.Windows.Forms.Button();
-            this.partiesBtn = new System.Windows.Forms.Button();
+            this.BtnDisplayLocations = new System.Windows.Forms.Button();
+            this.btnhighbydate = new System.Windows.Forms.Button();
             this.lblLocation = new System.Windows.Forms.Label();
             this.reportLbl = new System.Windows.Forms.Label();
-            this.candidateListbox = new System.Windows.Forms.ListBox();
-            this.partyListbox = new System.Windows.Forms.ListBox();
+            this.DetailListbox = new System.Windows.Forms.ListBox();
+            this.HighestByDateListbox = new System.Windows.Forms.ListBox();
             this.btnsort = new System.Windows.Forms.Button();
+            this.lblDetails = new System.Windows.Forms.Label();
+            this.lblHightByDate = new System.Windows.Forms.Label();
+            this.DisplayHighByLacationListBox = new System.Windows.Forms.ListBox();
+            this.lblbyLoc = new System.Windows.Forms.Label();
+            this.btnHighLocation = new System.Windows.Forms.Button();
+            this.btnhighValue = new System.Windows.Forms.Button();
+            this.lblhighestValue = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // configBtn
@@ -61,7 +68,7 @@
             this.RunProducerConsumerBtn.Name = "RunProducerConsumerBtn";
             this.RunProducerConsumerBtn.Size = new System.Drawing.Size(382, 56);
             this.RunProducerConsumerBtn.TabIndex = 1;
-            this.RunProducerConsumerBtn.Text = "Load Candidate Data";
+            this.RunProducerConsumerBtn.Text = "Load Particulates Data";
             this.RunProducerConsumerBtn.UseVisualStyleBackColor = true;
             this.RunProducerConsumerBtn.Click += new System.EventHandler(this.RunProducerConsumerBtn_Click);
             // 
@@ -89,41 +96,41 @@
             // 
             this.LocationListbox.FormattingEnabled = true;
             this.LocationListbox.ItemHeight = 25;
-            this.LocationListbox.Location = new System.Drawing.Point(496, 181);
+            this.LocationListbox.Location = new System.Drawing.Point(496, 148);
             this.LocationListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.LocationListbox.Name = "LocationListbox";
-            this.LocationListbox.Size = new System.Drawing.Size(434, 354);
+            this.LocationListbox.Size = new System.Drawing.Size(434, 229);
             this.LocationListbox.TabIndex = 4;
             this.LocationListbox.SelectedIndexChanged += new System.EventHandler(this.LocationListbox_SelectedIndexChanged);
             // 
-            // constituencyBtn
+            // BtnDisplayLocations
             // 
-            this.constituencyBtn.Enabled = false;
-            this.constituencyBtn.Location = new System.Drawing.Point(50, 244);
-            this.constituencyBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.constituencyBtn.Name = "constituencyBtn";
-            this.constituencyBtn.Size = new System.Drawing.Size(270, 61);
-            this.constituencyBtn.TabIndex = 5;
-            this.constituencyBtn.Text = "Display Constituencies";
-            this.constituencyBtn.UseVisualStyleBackColor = true;
-            this.constituencyBtn.Click += new System.EventHandler(this.constituenciesBtn_Click);
+            this.BtnDisplayLocations.Enabled = false;
+            this.BtnDisplayLocations.Location = new System.Drawing.Point(50, 253);
+            this.BtnDisplayLocations.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BtnDisplayLocations.Name = "BtnDisplayLocations";
+            this.BtnDisplayLocations.Size = new System.Drawing.Size(270, 61);
+            this.BtnDisplayLocations.TabIndex = 5;
+            this.BtnDisplayLocations.Text = "Display Locations";
+            this.BtnDisplayLocations.UseVisualStyleBackColor = true;
+            this.BtnDisplayLocations.Click += new System.EventHandler(this.constituenciesBtn_Click);
             // 
-            // partiesBtn
+            // btnhighbydate
             // 
-            this.partiesBtn.Enabled = false;
-            this.partiesBtn.Location = new System.Drawing.Point(50, 441);
-            this.partiesBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.partiesBtn.Name = "partiesBtn";
-            this.partiesBtn.Size = new System.Drawing.Size(270, 61);
-            this.partiesBtn.TabIndex = 6;
-            this.partiesBtn.Text = "Display Party Votes";
-            this.partiesBtn.UseVisualStyleBackColor = true;
-            this.partiesBtn.Click += new System.EventHandler(this.partiesBtn_Click);
+            this.btnhighbydate.Enabled = false;
+            this.btnhighbydate.Location = new System.Drawing.Point(977, 678);
+            this.btnhighbydate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnhighbydate.Name = "btnhighbydate";
+            this.btnhighbydate.Size = new System.Drawing.Size(393, 61);
+            this.btnhighbydate.TabIndex = 6;
+            this.btnhighbydate.Text = "Display Highest Values By Date";
+            this.btnhighbydate.UseVisualStyleBackColor = true;
+            this.btnhighbydate.Click += new System.EventHandler(this.btnhighbydate_Click);
             // 
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
-            this.lblLocation.Location = new System.Drawing.Point(496, 141);
+            this.lblLocation.Location = new System.Drawing.Point(491, 110);
             this.lblLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocation.Name = "lblLocation";
             this.lblLocation.Size = new System.Drawing.Size(94, 25);
@@ -139,25 +146,25 @@
             this.reportLbl.Size = new System.Drawing.Size(0, 25);
             this.reportLbl.TabIndex = 8;
             // 
-            // candidateListbox
+            // DetailListbox
             // 
-            this.candidateListbox.FormattingEnabled = true;
-            this.candidateListbox.ItemHeight = 25;
-            this.candidateListbox.Location = new System.Drawing.Point(977, 181);
-            this.candidateListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.candidateListbox.Name = "candidateListbox";
-            this.candidateListbox.Size = new System.Drawing.Size(592, 354);
-            this.candidateListbox.TabIndex = 9;
+            this.DetailListbox.FormattingEnabled = true;
+            this.DetailListbox.ItemHeight = 25;
+            this.DetailListbox.Location = new System.Drawing.Point(977, 148);
+            this.DetailListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.DetailListbox.Name = "DetailListbox";
+            this.DetailListbox.Size = new System.Drawing.Size(592, 229);
+            this.DetailListbox.TabIndex = 9;
             // 
-            // partyListbox
+            // HighestByDateListbox
             // 
-            this.partyListbox.FormattingEnabled = true;
-            this.partyListbox.ItemHeight = 25;
-            this.partyListbox.Location = new System.Drawing.Point(977, 565);
-            this.partyListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.partyListbox.Name = "partyListbox";
-            this.partyListbox.Size = new System.Drawing.Size(592, 354);
-            this.partyListbox.TabIndex = 10;
+            this.HighestByDateListbox.FormattingEnabled = true;
+            this.HighestByDateListbox.ItemHeight = 25;
+            this.HighestByDateListbox.Location = new System.Drawing.Point(977, 487);
+            this.HighestByDateListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.HighestByDateListbox.Name = "HighestByDateListbox";
+            this.HighestByDateListbox.Size = new System.Drawing.Size(592, 179);
+            this.HighestByDateListbox.TabIndex = 10;
             // 
             // btnsort
             // 
@@ -171,18 +178,98 @@
             this.btnsort.UseVisualStyleBackColor = true;
             this.btnsort.Click += new System.EventHandler(this.btnsort_Click);
             // 
+            // lblDetails
+            // 
+            this.lblDetails.AutoSize = true;
+            this.lblDetails.Location = new System.Drawing.Point(972, 110);
+            this.lblDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDetails.Name = "lblDetails";
+            this.lblDetails.Size = new System.Drawing.Size(166, 25);
+            this.lblDetails.TabIndex = 12;
+            this.lblDetails.Text = "Location Details";
+            // 
+            // lblHightByDate
+            // 
+            this.lblHightByDate.AutoSize = true;
+            this.lblHightByDate.Location = new System.Drawing.Point(972, 426);
+            this.lblHightByDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHightByDate.Name = "lblHightByDate";
+            this.lblHightByDate.Size = new System.Drawing.Size(239, 25);
+            this.lblHightByDate.TabIndex = 13;
+            this.lblHightByDate.Text = "Highest Values By Date";
+            // 
+            // DisplayHighByLacationListBox
+            // 
+            this.DisplayHighByLacationListBox.FormattingEnabled = true;
+            this.DisplayHighByLacationListBox.ItemHeight = 25;
+            this.DisplayHighByLacationListBox.Location = new System.Drawing.Point(496, 487);
+            this.DisplayHighByLacationListBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.DisplayHighByLacationListBox.Name = "DisplayHighByLacationListBox";
+            this.DisplayHighByLacationListBox.Size = new System.Drawing.Size(434, 154);
+            this.DisplayHighByLacationListBox.TabIndex = 14;
+            // 
+            // lblbyLoc
+            // 
+            this.lblbyLoc.AutoSize = true;
+            this.lblbyLoc.Location = new System.Drawing.Point(491, 426);
+            this.lblbyLoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblbyLoc.Name = "lblbyLoc";
+            this.lblbyLoc.Size = new System.Drawing.Size(294, 25);
+            this.lblbyLoc.TabIndex = 15;
+            this.lblbyLoc.Text = "Highest Values For Locations";
+            // 
+            // btnHighLocation
+            // 
+            this.btnHighLocation.Enabled = false;
+            this.btnHighLocation.Location = new System.Drawing.Point(496, 663);
+            this.btnHighLocation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnHighLocation.Name = "btnHighLocation";
+            this.btnHighLocation.Size = new System.Drawing.Size(386, 61);
+            this.btnHighLocation.TabIndex = 16;
+            this.btnHighLocation.Text = "Display Highest Value For Locations";
+            this.btnHighLocation.UseVisualStyleBackColor = true;
+            this.btnHighLocation.Click += new System.EventHandler(this.btnHighLocation_Click);
+            // 
+            // btnhighValue
+            // 
+            this.btnhighValue.Enabled = false;
+            this.btnhighValue.Location = new System.Drawing.Point(25, 909);
+            this.btnhighValue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnhighValue.Name = "btnhighValue";
+            this.btnhighValue.Size = new System.Drawing.Size(393, 61);
+            this.btnhighValue.TabIndex = 17;
+            this.btnhighValue.Text = "Display Highest Value";
+            this.btnhighValue.UseVisualStyleBackColor = true;
+            this.btnhighValue.Click += new System.EventHandler(this.btnhighValue_Click);
+            // 
+            // lblhighestValue
+            // 
+            this.lblhighestValue.AutoSize = true;
+            this.lblhighestValue.Location = new System.Drawing.Point(20, 864);
+            this.lblhighestValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblhighestValue.Name = "lblhighestValue";
+            this.lblhighestValue.Size = new System.Drawing.Size(0, 25);
+            this.lblhighestValue.TabIndex = 18;
+            // 
             // FormsBasedUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1658, 1038);
+            this.Controls.Add(this.lblhighestValue);
+            this.Controls.Add(this.btnhighValue);
+            this.Controls.Add(this.btnHighLocation);
+            this.Controls.Add(this.lblbyLoc);
+            this.Controls.Add(this.DisplayHighByLacationListBox);
+            this.Controls.Add(this.lblHightByDate);
+            this.Controls.Add(this.lblDetails);
             this.Controls.Add(this.btnsort);
-            this.Controls.Add(this.partyListbox);
-            this.Controls.Add(this.candidateListbox);
+            this.Controls.Add(this.HighestByDateListbox);
+            this.Controls.Add(this.DetailListbox);
             this.Controls.Add(this.reportLbl);
             this.Controls.Add(this.lblLocation);
-            this.Controls.Add(this.partiesBtn);
-            this.Controls.Add(this.constituencyBtn);
+            this.Controls.Add(this.btnhighbydate);
+            this.Controls.Add(this.BtnDisplayLocations);
             this.Controls.Add(this.LocationListbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressLbl);
@@ -191,7 +278,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormsBasedUI";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.FormsBasedUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,13 +290,20 @@
         private System.Windows.Forms.Label progressLbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox LocationListbox;
-        private System.Windows.Forms.Button constituencyBtn;
-        private System.Windows.Forms.Button partiesBtn;
+        private System.Windows.Forms.Button BtnDisplayLocations;
+        private System.Windows.Forms.Button btnhighbydate;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.Label reportLbl;
-        private System.Windows.Forms.ListBox candidateListbox;
-        private System.Windows.Forms.ListBox partyListbox;
+        private System.Windows.Forms.ListBox DetailListbox;
+        private System.Windows.Forms.ListBox HighestByDateListbox;
         private System.Windows.Forms.Button btnsort;
+        private System.Windows.Forms.Label lblDetails;
+        private System.Windows.Forms.Label lblHightByDate;
+        private System.Windows.Forms.ListBox DisplayHighByLacationListBox;
+        private System.Windows.Forms.Label lblbyLoc;
+        private System.Windows.Forms.Button btnHighLocation;
+        private System.Windows.Forms.Button btnhighValue;
+        private System.Windows.Forms.Label lblhighestValue;
     }
 }
 

@@ -43,6 +43,64 @@ namespace AirRecords
             return particulatedataList;
         }
 
-       
+        public List<String> CalculateTotalParticulates2()
+        {
+            List<String> particulatedataList = new List<string>();
+
+            var parTotal =
+                from Location in this.Locations
+                from Particulate in Location.Particulates
+                group Particulate by Location.Name into datareading
+
+                let total = (from cand in datareading
+                             select
+                (int)cand.Value).Sum()
+                orderby total descending
+                select new
+                {
+                    Par = datareading.Key,
+                    Total = total
+                };
+
+
+            foreach (var p in parTotal)
+            {
+                particulatedataList.Add(String.Format("Location: {0} Values: {1}", p.Par, p.Total));
+            }
+
+            return particulatedataList;
+        }
+
+        public string highestValue()
+        {
+            int highest = 0;
+            var loc = "";
+            string Date = "";
+
+            foreach (var lo in Locations)
+            {
+                foreach (var r in lo.Particulates)
+                {
+                    if (r.Value > highest)
+                    {
+                        highest = r.Value;
+                        loc = lo.Name;
+                        Date = r.Date;
+                    }
+                }
+            }
+            if (!string.IsNullOrWhiteSpace(loc) && !string.IsNullOrWhiteSpace(Date) && highest !=0 )
+            {
+                return String.Format("The location: {0}, had the highest value: {1}, on date: {2}",
+                                      loc,highest,Date);
+            }
+            else
+            {
+                return "Data not loaded! Please reaload the xml or the program.";
+            }
+        }
+
+
+
     }
 }

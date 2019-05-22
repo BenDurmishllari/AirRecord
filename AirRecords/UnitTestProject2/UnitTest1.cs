@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using AirRecords;
 using tester =  AirRecords.Location;
+using tester2 = AirRecords.ConfigData;
 
 namespace UnitTestProject2
 {
@@ -20,4 +21,6 @@ namespace UnitTestProject2
             Assert.AreEqual(A.totalpartcalculate(), 5);
         }
     }
+
+
 }
