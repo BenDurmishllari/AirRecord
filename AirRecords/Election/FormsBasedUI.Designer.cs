@@ -51,10 +51,10 @@
             // 
             // configBtn
             // 
-            this.configBtn.Location = new System.Drawing.Point(50, 42);
-            this.configBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.configBtn.Location = new System.Drawing.Point(25, 22);
+            this.configBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.configBtn.Name = "configBtn";
-            this.configBtn.Size = new System.Drawing.Size(382, 61);
+            this.configBtn.Size = new System.Drawing.Size(191, 32);
             this.configBtn.TabIndex = 0;
             this.configBtn.Text = "Create Config Data";
             this.configBtn.UseVisualStyleBackColor = true;
@@ -63,10 +63,10 @@
             // RunProducerConsumerBtn
             // 
             this.RunProducerConsumerBtn.Enabled = false;
-            this.RunProducerConsumerBtn.Location = new System.Drawing.Point(50, 141);
-            this.RunProducerConsumerBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.RunProducerConsumerBtn.Location = new System.Drawing.Point(25, 73);
+            this.RunProducerConsumerBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RunProducerConsumerBtn.Name = "RunProducerConsumerBtn";
-            this.RunProducerConsumerBtn.Size = new System.Drawing.Size(382, 56);
+            this.RunProducerConsumerBtn.Size = new System.Drawing.Size(191, 29);
             this.RunProducerConsumerBtn.TabIndex = 1;
             this.RunProducerConsumerBtn.Text = "Load Particulates Data";
             this.RunProducerConsumerBtn.UseVisualStyleBackColor = true;
@@ -75,41 +75,40 @@
             // progressLbl
             // 
             this.progressLbl.AutoSize = true;
-            this.progressLbl.Location = new System.Drawing.Point(576, 42);
-            this.progressLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.progressLbl.Location = new System.Drawing.Point(288, 22);
+            this.progressLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.progressLbl.Name = "progressLbl";
-            this.progressLbl.Size = new System.Drawing.Size(144, 25);
+            this.progressLbl.Size = new System.Drawing.Size(73, 13);
             this.progressLbl.TabIndex = 2;
             this.progressLbl.Text = "Awaiting Data";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(470, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(235, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 25);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Status:";
             // 
             // LocationListbox
             // 
             this.LocationListbox.FormattingEnabled = true;
-            this.LocationListbox.ItemHeight = 25;
-            this.LocationListbox.Location = new System.Drawing.Point(496, 148);
-            this.LocationListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.LocationListbox.Location = new System.Drawing.Point(248, 77);
+            this.LocationListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LocationListbox.Name = "LocationListbox";
-            this.LocationListbox.Size = new System.Drawing.Size(434, 229);
+            this.LocationListbox.Size = new System.Drawing.Size(219, 121);
             this.LocationListbox.TabIndex = 4;
             this.LocationListbox.SelectedIndexChanged += new System.EventHandler(this.LocationListbox_SelectedIndexChanged);
             // 
             // BtnDisplayLocations
             // 
             this.BtnDisplayLocations.Enabled = false;
-            this.BtnDisplayLocations.Location = new System.Drawing.Point(50, 253);
-            this.BtnDisplayLocations.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BtnDisplayLocations.Location = new System.Drawing.Point(25, 132);
+            this.BtnDisplayLocations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnDisplayLocations.Name = "BtnDisplayLocations";
-            this.BtnDisplayLocations.Size = new System.Drawing.Size(270, 61);
+            this.BtnDisplayLocations.Size = new System.Drawing.Size(135, 32);
             this.BtnDisplayLocations.TabIndex = 5;
             this.BtnDisplayLocations.Text = "Display Locations";
             this.BtnDisplayLocations.UseVisualStyleBackColor = true;
@@ -118,61 +117,59 @@
             // btnhighbydate
             // 
             this.btnhighbydate.Enabled = false;
-            this.btnhighbydate.Location = new System.Drawing.Point(977, 678);
-            this.btnhighbydate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnhighbydate.Location = new System.Drawing.Point(488, 353);
+            this.btnhighbydate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnhighbydate.Name = "btnhighbydate";
-            this.btnhighbydate.Size = new System.Drawing.Size(393, 61);
+            this.btnhighbydate.Size = new System.Drawing.Size(196, 32);
             this.btnhighbydate.TabIndex = 6;
-            this.btnhighbydate.Text = "Display Highest Values By Date";
+            this.btnhighbydate.Text = "Display Total Values By Date";
             this.btnhighbydate.UseVisualStyleBackColor = true;
             this.btnhighbydate.Click += new System.EventHandler(this.btnhighbydate_Click);
             // 
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
-            this.lblLocation.Location = new System.Drawing.Point(491, 110);
-            this.lblLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLocation.Location = new System.Drawing.Point(246, 57);
+            this.lblLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(94, 25);
+            this.lblLocation.Size = new System.Drawing.Size(48, 13);
             this.lblLocation.TabIndex = 7;
             this.lblLocation.Text = "Location";
             // 
             // reportLbl
             // 
             this.reportLbl.AutoSize = true;
-            this.reportLbl.Location = new System.Drawing.Point(750, 141);
-            this.reportLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.reportLbl.Location = new System.Drawing.Point(375, 73);
+            this.reportLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.reportLbl.Name = "reportLbl";
-            this.reportLbl.Size = new System.Drawing.Size(0, 25);
+            this.reportLbl.Size = new System.Drawing.Size(0, 13);
             this.reportLbl.TabIndex = 8;
             // 
             // DetailListbox
             // 
             this.DetailListbox.FormattingEnabled = true;
-            this.DetailListbox.ItemHeight = 25;
-            this.DetailListbox.Location = new System.Drawing.Point(977, 148);
-            this.DetailListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.DetailListbox.Location = new System.Drawing.Point(488, 77);
+            this.DetailListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DetailListbox.Name = "DetailListbox";
-            this.DetailListbox.Size = new System.Drawing.Size(592, 229);
+            this.DetailListbox.Size = new System.Drawing.Size(298, 121);
             this.DetailListbox.TabIndex = 9;
             // 
             // HighestByDateListbox
             // 
             this.HighestByDateListbox.FormattingEnabled = true;
-            this.HighestByDateListbox.ItemHeight = 25;
-            this.HighestByDateListbox.Location = new System.Drawing.Point(977, 487);
-            this.HighestByDateListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.HighestByDateListbox.Location = new System.Drawing.Point(488, 253);
+            this.HighestByDateListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HighestByDateListbox.Name = "HighestByDateListbox";
-            this.HighestByDateListbox.Size = new System.Drawing.Size(592, 179);
+            this.HighestByDateListbox.Size = new System.Drawing.Size(298, 95);
             this.HighestByDateListbox.TabIndex = 10;
             // 
             // btnsort
             // 
             this.btnsort.Enabled = false;
-            this.btnsort.Location = new System.Drawing.Point(50, 340);
-            this.btnsort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnsort.Location = new System.Drawing.Point(25, 177);
+            this.btnsort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnsort.Name = "btnsort";
-            this.btnsort.Size = new System.Drawing.Size(270, 61);
+            this.btnsort.Size = new System.Drawing.Size(135, 32);
             this.btnsort.TabIndex = 11;
             this.btnsort.Text = "Alphabetical Sort";
             this.btnsort.UseVisualStyleBackColor = true;
@@ -181,62 +178,61 @@
             // lblDetails
             // 
             this.lblDetails.AutoSize = true;
-            this.lblDetails.Location = new System.Drawing.Point(972, 110);
-            this.lblDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDetails.Location = new System.Drawing.Point(486, 57);
+            this.lblDetails.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(166, 25);
+            this.lblDetails.Size = new System.Drawing.Size(83, 13);
             this.lblDetails.TabIndex = 12;
             this.lblDetails.Text = "Location Details";
             // 
             // lblHightByDate
             // 
             this.lblHightByDate.AutoSize = true;
-            this.lblHightByDate.Location = new System.Drawing.Point(972, 426);
-            this.lblHightByDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHightByDate.Location = new System.Drawing.Point(486, 222);
+            this.lblHightByDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHightByDate.Name = "lblHightByDate";
-            this.lblHightByDate.Size = new System.Drawing.Size(239, 25);
+            this.lblHightByDate.Size = new System.Drawing.Size(107, 13);
             this.lblHightByDate.TabIndex = 13;
-            this.lblHightByDate.Text = "Highest Values By Date";
+            this.lblHightByDate.Text = "Total Values By Date";
             // 
             // DisplayHighByLacationListBox
             // 
             this.DisplayHighByLacationListBox.FormattingEnabled = true;
-            this.DisplayHighByLacationListBox.ItemHeight = 25;
-            this.DisplayHighByLacationListBox.Location = new System.Drawing.Point(496, 487);
-            this.DisplayHighByLacationListBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.DisplayHighByLacationListBox.Location = new System.Drawing.Point(248, 253);
+            this.DisplayHighByLacationListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DisplayHighByLacationListBox.Name = "DisplayHighByLacationListBox";
-            this.DisplayHighByLacationListBox.Size = new System.Drawing.Size(434, 154);
+            this.DisplayHighByLacationListBox.Size = new System.Drawing.Size(219, 82);
             this.DisplayHighByLacationListBox.TabIndex = 14;
             // 
             // lblbyLoc
             // 
             this.lblbyLoc.AutoSize = true;
-            this.lblbyLoc.Location = new System.Drawing.Point(491, 426);
-            this.lblbyLoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblbyLoc.Location = new System.Drawing.Point(246, 222);
+            this.lblbyLoc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblbyLoc.Name = "lblbyLoc";
-            this.lblbyLoc.Size = new System.Drawing.Size(294, 25);
+            this.lblbyLoc.Size = new System.Drawing.Size(130, 13);
             this.lblbyLoc.TabIndex = 15;
-            this.lblbyLoc.Text = "Highest Values For Locations";
+            this.lblbyLoc.Text = "Total Values By Locations";
             // 
             // btnHighLocation
             // 
             this.btnHighLocation.Enabled = false;
-            this.btnHighLocation.Location = new System.Drawing.Point(496, 663);
-            this.btnHighLocation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnHighLocation.Location = new System.Drawing.Point(248, 345);
+            this.btnHighLocation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHighLocation.Name = "btnHighLocation";
-            this.btnHighLocation.Size = new System.Drawing.Size(386, 61);
+            this.btnHighLocation.Size = new System.Drawing.Size(193, 32);
             this.btnHighLocation.TabIndex = 16;
-            this.btnHighLocation.Text = "Display Highest Value For Locations";
+            this.btnHighLocation.Text = "Display Total Values By Locations";
             this.btnHighLocation.UseVisualStyleBackColor = true;
             this.btnHighLocation.Click += new System.EventHandler(this.btnHighLocation_Click);
             // 
             // btnhighValue
             // 
             this.btnhighValue.Enabled = false;
-            this.btnhighValue.Location = new System.Drawing.Point(25, 909);
-            this.btnhighValue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnhighValue.Location = new System.Drawing.Point(12, 473);
+            this.btnhighValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnhighValue.Name = "btnhighValue";
-            this.btnhighValue.Size = new System.Drawing.Size(393, 61);
+            this.btnhighValue.Size = new System.Drawing.Size(196, 32);
             this.btnhighValue.TabIndex = 17;
             this.btnhighValue.Text = "Display Highest Value";
             this.btnhighValue.UseVisualStyleBackColor = true;
@@ -245,17 +241,17 @@
             // lblhighestValue
             // 
             this.lblhighestValue.AutoSize = true;
-            this.lblhighestValue.Location = new System.Drawing.Point(20, 864);
-            this.lblhighestValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblhighestValue.Location = new System.Drawing.Point(10, 449);
+            this.lblhighestValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblhighestValue.Name = "lblhighestValue";
-            this.lblhighestValue.Size = new System.Drawing.Size(0, 25);
+            this.lblhighestValue.Size = new System.Drawing.Size(0, 13);
             this.lblhighestValue.TabIndex = 18;
             // 
             // FormsBasedUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1658, 1038);
+            this.ClientSize = new System.Drawing.Size(829, 520);
             this.Controls.Add(this.lblhighestValue);
             this.Controls.Add(this.btnhighValue);
             this.Controls.Add(this.btnHighLocation);
@@ -275,7 +271,7 @@
             this.Controls.Add(this.progressLbl);
             this.Controls.Add(this.RunProducerConsumerBtn);
             this.Controls.Add(this.configBtn);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormsBasedUI";
             this.Text = "Form1";
             this.ResumeLayout(false);

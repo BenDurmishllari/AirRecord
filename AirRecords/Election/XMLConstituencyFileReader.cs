@@ -8,9 +8,9 @@ using System.Xml.Linq;
 
 namespace AirRecords
 {
-    public class XMLConstituencyFileReader : IConstituencyFileReader
+    public class XMLConstituencyFileReader : ILocationFileReader
     {
-        public Location ReadConstituencyDataFromFile(ConfigRecord configRecord)
+        public Location ReadLocationsFromFileData(ConfigRecord configRecord)
         {
             // Open the file to read from on the local file system.
             // If this file is missing then return immediately from this method.

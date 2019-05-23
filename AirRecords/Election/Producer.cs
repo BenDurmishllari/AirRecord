@@ -17,7 +17,7 @@ namespace AirRecords
 		private PCQueue pcQueue; // Shared PCQueue that this producer is producing work items for
 
         private ConfigData configFile; // Configuration data (details of datasets to be processed)
-        private IConstituencyFileReader IOhandler; // File handler for reading data
+        private ILocationFileReader IOhandler; // File handler for reading data
 
         public static int RunningThreads // Property getter/setter methods
 		{
@@ -53,7 +53,7 @@ namespace AirRecords
 			}
 		}
 
-		public Producer(string id, PCQueue pcQueue, ConfigData configFile, IConstituencyFileReader IOhandler)
+		public Producer(string id, PCQueue pcQueue, ConfigData configFile, ILocationFileReader IOhandler)
 		{
 			this.id = id;
 			finished = false; // Initially not finished

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AirRecords
 {
-    public interface IConstituencyFileReader
+    public interface ILocationFileReader
     {
-        Location ReadConstituencyDataFromFile(ConfigRecord configRecord);
+        Location ReadLocationsFromFileData(ConfigRecord configRecord);
     }
 }

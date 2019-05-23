@@ -16,6 +16,7 @@ namespace AirRecords
             this.Locations = new List<Location>();
         }
 
+        // method to display total values for each date
         public List<String> CalculateTotalParticulates()
         {
             List<String> particulatedataList = new List<string>();
@@ -43,6 +44,8 @@ namespace AirRecords
             return particulatedataList;
         }
 
+        // method to get the highest value
+        // for each location
         public List<String> CalculateTotalParticulates2()
         {
             List<String> particulatedataList = new List<string>();
@@ -71,6 +74,8 @@ namespace AirRecords
             return particulatedataList;
         }
 
+        // method to get the highest value
+        // from all the locations
         public string highestValue()
         {
             int highest = 0;

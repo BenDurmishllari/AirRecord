@@ -13,13 +13,13 @@ namespace AirRecords
 {
     public partial class FormsBasedUI : Form, IUserInterface
     {
-        public IConstituencyFileReader IOhandler { get; set; }
+        public ILocationFileReader IOhandler { get; set; }
         private ConfigData configData;
         private LocationList locList;
 
         private String selectedReportType;
 
-        public FormsBasedUI(IConstituencyFileReader IOhandler)
+        public FormsBasedUI(ILocationFileReader IOhandler)
         {
             InitializeComponent();
             this.IOhandler = IOhandler;
@@ -192,9 +192,6 @@ namespace AirRecords
             LocationListbox.Items.Clear();
             DisplayLocations();
         }
-
-        
-
 
         private void btnsort_Click(object sender, EventArgs e)
         {
